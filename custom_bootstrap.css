@@ -1,0 +1,245 @@
+body
+{   
+    margin: 0;
+    background-image: url(background.jpg);
+    padding-top: 50px !important;
+    background-attachment: fixed;
+}
+.menuPad
+{
+    padding-top: 20px !important;
+}
+p{
+    color: #FFFEFE;
+    font-size: 18px;
+    font-family: Garamond, serif;
+}
+
+h1, h2, h4{
+    color: #FFFEFE;
+    font-family: Helvetica, sans-serif;
+}
+h1, h2{
+    font-weight: bold;
+}
+h1
+{
+    font-size: 50px;
+}
+
+a, a:active, a:visited 
+{
+	color: #FFFEFE !important;
+}
+
+.navbar
+{
+    background-color:#222222;
+}
+
+bg-dark{
+    background-color:#222222;
+}
+
+
+a:hover
+{
+	color: #82828C!important;
+}
+
+.col-md-12, .col-md-6
+{
+    background-color: #222222 !important;
+}
+
+.Contact
+{
+    background-color: #222222;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    
+}
+
+@media (max-width: 900px)
+{   
+    .menuImg
+    {
+       display: none; 
+    }
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+.BookTable{
+	background-color:rgba(0,0,0,.7);
+
+}
+.button1 
+{
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-bottom:3px;
+  margin-left:30px;
+  border: 1px solid;
+  border-color:none none white none; 
+  width: 90%;
+}
+h5
+{
+	color: #FFFEFE;
+    font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+}
+h6
+{
+	color:#FFFEFE;
+	font-family:Helvetica, sans-serif;
+	font-weight:bold;
+}
+#text2
+{ 
+width: 80%;
+padding: 5px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+overflow:hidden;
+background-color:white;
+color:black;
+font-size:15px;
+height:35px;
+width:30px;
+}
+.button2
+{
+background-color: #222222;
+color: white;
+border: none;
+padding:8px;
+margin-left:2px;
+}
+.button1:hover 
+{
+opacity: 0.9;
+background-color:white;
+color:#222222;
+}
+.button2:hover{
+	opacity: 0.9;
+  background-color:white;
+  color:#222222;
+}
+input[type=text]{
+  width: 90%;
+  padding: 23px;
+  margin-right:10px;
+  display: inline-block;
+  border-style:3px solid;
+  border-color:none none white none;
+  box-sizing: border-box;
+  overflow:hidden;
+  margin-top:8px;
+  margin-left:10px;
+  background-color:transparent;
+}
+
+.t1{
+	margin-top:20px;
+}
+
+.TableForm{
+	text-align:right;
+	
+}
+.p1
+{
+	text-align:left;
+	padding: 10px;
+	margin: 10px;
+	overflow:hidden;
+}
+.vl
+{
+border:0.6px solid white;
+background-color:white;
+height: 880px;
+position: absolute;
+left: 50%;
+margin-left: -3px;
+top: 0;
+margin-top:15px;
+}
+
+.Reservation
+{
+	background-color:transparent;
+	border:2px solid;
+	color:white;
+	letter-spacing:0.8px;
+	padding: 5px 10px;
+	position:absolute;
+	top:10px;
+	right:30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:14px;
+	display:block;
+}
+#myBtn 
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: #222222; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 20px; /* Rounded corners */
+  
+}
+
+#myBtn:hover 
+{
+    opacity:0.5;
+    /* Add a dark-grey background on hover */
+  }
+  @media (max-width: 772px) {
+      #scroll-button{
+          margin-right:15px;
+      }
+      #myBtn{
+          margin-right:2px;
+      }
+      h5{
+          margin-left:10px;
+      }
+      #text2{
+          margin-left:10px;
+      }
+      .button2{
+          margin-left:10px;
+      }
+      
+      .vl{
+          display:none;
+      }
+      
+  }
+  
+  @media (max-width: 1000px){
+      .vl{
+          height:1090px;
+      }
+  }
