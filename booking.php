@@ -1,4 +1,55 @@
 <?php include 'myheader.php'?>
+<html>
+    <head>
+        <style>
+            .option{
+                margin-left:10px;
+                width: 90%;
+                padding:10px;
+                margin-bottom:20px;
+            }
+            .number{
+            
+               margin-left:-8px;
+                color:white;
+                padding:20px;
+               
+            }
+            .time{
+                margin:60px;
+                width:100%;
+            }
+            .date{
+                margin:20px;
+                width:80%;
+            }
+            .wishes{
+                margin:50px;
+                width:80%;
+            }
+            .email{
+                margin:60px;
+                width:80%;
+            }
+            .name{
+                margin:50px;
+                width:80%;
+                
+            }
+            .input{
+                margin:5px;
+                margin-left:890px;
+               margin-top:-2px;
+                width:20%;
+                font-family:cubic;
+               
+               
+             
+                
+            }
+        </style>
+    </head>
+<html>
 <div class="row mt-5">
     <div class="col-md-12 BookTable p-3">
         <div class="row">
@@ -18,28 +69,39 @@
                     <p class="vertical-align p1">If you have special diets or allergies, please let us know in the booking. Children for whom it is necessary to book a high chair, or disabled please let us know as early as possible. This way we can take your needs into consideration in advance. </p>
             </div>
             <div class="col-md-6 Form2">
+            <form name="Form2" method="post" action="create.php">
                 <h4> Table reservation request for groups of more than 8 people </h4> 
-                    <input type="text" style="margin:30px"  class="form-control t1" placeholder="Time" aria-label="Time" aria-describedby="basic-addon2">
-                    <br>
-                    <input type="text" style="margin:30px"  class="form-control t2" placeholder="Date <dd.mm.yyyy>" aria-label="Date" aria-describedby="basic-addon2">
-                    <br>
-                    <input type="text" style="margin:30px"  class="form-control t3" placeholder="Number of people" aria-label="Number of people" aria-describedby="basic-addon2">
-                    <br>
-                    <input type="text" style="margin:30px"  class="form-control t4" placeholder="Wishes" aria-label="Wishes" aria-describedby="basic-addon2">
-                    <br>
-                    <input type="text" style="margin:30px"  class="form-control t5" placeholder="Name" aria-label="Name" aria-describedby="basic-addon2">
-                    <br>
-                    <input type="text" style="margin:30px"  class="form-control t6" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
-                    <br>
-                    <input type="text" style="margin:30px"  class="form-control t7" placeholder="Contact information" aria-label="Contact information" aria-describedby="basic-addon2">
-                    <br>
-            
-                    <div class="input-group-append">
-                    <button class="btn btn-outline-secondary button1" type="button" class="margin:30px" >Send the booking inquiry</button>
-            </div>
+                <input style="color:white;" type="text" placeholder="Time<am/pm>" name="time" aria-describedby="basic-addon2" class="time" maxlength="5" required/><br>
+    <input style="color:white;" type="text" placeholder="Date<dd.mm.yy>" name="date" aria-describedby="basic-addon2" class="date" maxlength="10" required/><br>
+    <div class="number">
+    Number of people:
+        </div>
+
+    <select name ="number" class="option">
+    <option value="1"  > 1</option>
+    <option value="2"> 2</option>
+    <option value="3"> 3</option>
+    <option value="4"> 4</option>
+    <option value="5"> 5</option>
+    <option value="6"> 6</option>
+    <option value="7"> 7</option>
+    <option value="8"> 8</option>
+    <option value="9"> 9</option>
+    <option value="10"> 10</option>
+    </select>
+
+    <br>
+
+    <input style="color:white;" type="text" placeholder="Wishes" name="wishes" aria-describedby="basic-addon2" class="wishes"required/><br>
+    <input style="color:white;" type="text" placeholder="Name" name="name" aria-describedby="basic-addon2" class="name"required/><br>
+    <input style="color:white;" type="text" placeholder="Email Address" name="email" aria-describedby="basic-addon2" class="email"required/>
+    </div>
+    <div class="input">
+    <input  type="submit" placeholder="Please send a book inquiry" value="Please send a book inquiry">
+        </div>
+    </form>
         </div>
         <div class="vl"></div>
     </div>
-</div>
 </div>
 <?php include 'myfooter.php'?>
