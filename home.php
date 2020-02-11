@@ -15,13 +15,13 @@
     </ol>
   <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="SlideshowFood1.jpg" alt="Picture of vietnamese food">
+        <img class="d-block w-100" src="images\SlideshowFood1.jpg" alt="Picture of vietnamese food">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="SlideshowFood2.jpg" alt="Picture of vietnamese food">
+        <img class="d-block w-100" src="images\SlideshowFood2.jpg" alt="Picture of vietnamese food">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="SlideshowFood3.jpg" alt="Picture of vietnamese food">
+        <img class="d-block w-100" src="images\SlideshowFood3.jpg" alt="Picture of vietnamese food">
       </div>
   </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
