@@ -45,15 +45,7 @@
        top:12px;
        right:80px;
        }
-       body
-    {   
-    margin: 0;
-    background-image: url(images\background3.jpg) center fixed   ;
-    padding-top: 50px !important;
     
-    
-   
-    }
       </style>
 
   </head>
@@ -87,7 +79,7 @@
                   <a class="nav-link" href="contact.php">Contact Info</a>
                 </li>
                 
-                  <a href="order.php" class="order"> Order Online</a>
+                  <a href="orderfood.php" class="order"> Order Online</a>
                   <div class="bell1">
                   <i class="fa fa-bell-o bell" aria-hidden="true"></i>
                   </div>
