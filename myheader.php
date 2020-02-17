@@ -44,6 +44,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.php">Contact Info</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="orderfood.php">Order Food</a>
+                </li>
               </ul>
             </div>
           </div>

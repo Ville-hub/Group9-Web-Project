@@ -1,7 +1,7 @@
 <?php include 'myheader.php'?>
 <div class="row mt-5"> 
     <div class="col-md-3 menu">
-            <img src="VietnameseFood1.jpg" class="img-fluid menuImg" alt="Picture of vietnamese food">
+            <img src="images\VietnameseFood1.jpg" class="img-fluid menuImg" alt="Picture of vietnamese food">
     </div>
         
     <div class="col-md-6 menu">
@@ -19,13 +19,13 @@
     </div>
         
     <div class="col-md-3 menu">			
-            <img src="VietnameseFood2.jpg" class="img-fluid menuImg" alt="Picture of vietnamese food">
+            <img src="images\VietnameseFood2.jpg" class="img-fluid menuImg" alt="Picture of vietnamese food">
     </div>      
 </div>
 
 <div class="row mt-5">
   <div class="col-md-3 menu">
-    <img src="VietnameseFood3.jpg" class="img-fluid menuImg" alt="Picture of vietnamese food">
+    <img src="images\VietnameseFood3.jpg" class="img-fluid menuImg" alt="Picture of vietnamese food">
   </div>
         
     <div class="col-md-6 menu">
@@ -45,7 +45,7 @@
     </div>
         
     <div class="col-md-3 menu">			
-      <img src="VietnameseFood4.jpg" class="img-fluid menuImg" alt="Picture of vietnamese food">
+      <img src="images\VietnameseFood4.jpg" class="img-fluid menuImg" alt="Picture of vietnamese food">
     </div>
 </div>
 <?php include 'myfooter.php'?>
