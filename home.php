@@ -149,7 +149,7 @@
 
 <div class="row menuPad">
 <div class="col-md-12 video">
-<video width="1168" height="700" controls autoplay>
+<video width="1168" height="700" autoplay loop>
 <source src="images\bumi-kallio_360.mp4" type="video/mp4">
 </video>
 </div>
@@ -162,17 +162,17 @@
     <div class="col-md-4 row1">
     <img class="gallery1" src="images\gallery1.jpg" width="360" height="300">
     <img class="gallery2" src ="images\gallery2.jpg" width="360" height="450">
-    <img class="gallery3" src ="images\gallery3.jpg" width ="360" height="300">
+    <img class="gallery3" src ="images\gallery3.jpg" width ="360" height="340">
     </div>
   <div class="col-md-4 row2">
   <img class="gallery4" src="images\gallery4.jpg" width="360" height="300">
   <img class="gallery5" src="images\gallery5.jpg" width="360" height="300">
-  <img class="gallery6" src="images\gallery6.jpg" width="360" height="450">
+  <img class="gallery6" src="images\gallery6.jpg" width="360" height="490">
   </div>
   <div class="col-md-4 row3">
   <img class="gallery7" src="images\gallery7.jpg" width="360" height="350">
   <img class="gallery9" src="images\gallery9.jpg" width="360" height="280">
-  <img class="gallery8" src="images\gallery8.jpg" width="360" height="420">
+  <img class="gallery8" src="images\gallery8.jpg" width="360" height="460">
   </div>
 
 
