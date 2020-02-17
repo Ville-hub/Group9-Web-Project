@@ -150,7 +150,7 @@
 <div class="row menuPad">
 <div class="col-md-12 video">
 <video width="1168" height="700" controls autoplay>
-<source src="bumi-kallio_360.mp4" type="video/mp4">
+<source src="images\bumi-kallio_360.mp4" type="video/mp4">
 </video>
 </div>
 </div>
