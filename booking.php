@@ -58,6 +58,7 @@
                 color:white;
                 margin-bottom:30px;
             }
+            
             .lnameClass{
                 color:white;
                 margin-bottom:30px;
@@ -89,6 +90,7 @@
         <div class="row">
             <div class="col-md-6 Form1"> 
                 <h4>Book a table </h4>
+                
                     <p class="vertical-align p1"> If you are unable to find a free table for your desired time or have a special request for your reservation, please contact us on 045 160 2275 or info@Saigondiner.fi </p><br>
                     <h6  class="vertical-align p1"> Lunch </h6>
                     <p class="vertical-align p1">	Mon - Sat 11:30 - 16:00 </p>
