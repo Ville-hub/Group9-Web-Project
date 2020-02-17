@@ -48,7 +48,7 @@
        body
     {   
     margin: 0;
-    background-image: url(background.jpg) center fixed   ;
+    background-image: url(images\background3.jpg) center fixed   ;
     padding-top: 50px !important;
     
     
