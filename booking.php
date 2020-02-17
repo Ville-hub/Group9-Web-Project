@@ -3,16 +3,19 @@
     <head>
         <style>
             .option{
-                margin-left:10px;
-                width: 90%;
+                margin-left:1px;
+                width: 80%;
                 padding:10px;
-                margin-bottom:20px;
+                margin-bottom:30px;
+               
             }
             .number{
             
-               margin-left:-8px;
+               margin:-20px;
                 color:white;
                 padding:20px;
+                margin-bottom:20px;
+                margin-top:20px;
                
             }
             .time{
@@ -20,32 +23,63 @@
                 width:100%;
             }
             .date{
-                margin:20px;
+                margin:1px;
                 width:80%;
             }
-            .wishes{
-                margin:50px;
-                width:80%;
-            }
+            
             .email{
-                margin:60px;
+                margin:1px;
                 width:80%;
+                color:black;
+                margin-bottom:30px;
+                margin-top:20px;
+            
             }
             .name{
-                margin:50px;
+                margin:10px;
                 width:80%;
                 
             }
             .input{
                 margin:5px;
-                margin-left:890px;
-               margin-top:-2px;
+                margin-left:250px;
+               margin-top:20px;
                 width:20%;
                 font-family:cubic;
-               
-               
-             
-                
+            }
+            .date{
+                color:white;
+                margin-bottom:30px;
+            }
+            .emailClass{
+                color:white;
+            }
+            .fnameClass{
+                color:white;
+                margin-bottom:30px;
+            }
+            .lnameClass{
+                color:white;
+                margin-bottom:30px;
+                margin-top:20px;
+            }
+            .emailClass{
+                margin-bottom:20px;
+                margin-top:20px;
+            }
+            .fname{
+                margin-bottom:20px;
+                width:80%;
+            }
+            .lname{
+                margin-bottom:20px;
+                width:80%;
+            }.time{
+                color:white;
+                margin:1px;
+                margin-bottom:20px;
+            }.dateInput{
+                margin-bottom:20px;
             }
         </style>
     </head>
@@ -71,31 +105,49 @@
             <div class="col-md-6 Form2">
             <form name="Form2" method="post" action="create.php">
                 <h4> Table reservation request for groups of more than 8 people </h4> 
-                <input style="color:white;" type="text" placeholder="Time<am/pm>" name="time" aria-describedby="basic-addon2" class="time" maxlength="5" required/><br>
-    <input style="color:white;" type="text" placeholder="Date<dd.mm.yy>" name="date" aria-describedby="basic-addon2" class="date" maxlength="10" required/><br>
+                <div class="date">
+                    Date
+        </div>
+                
+    <input style="color:black;" type="date" placeholder="Date" name="date"  aria-describedby="basic-addon2" class="dateInput" maxlength="10" required/><br>
+    <div class="time">
+        Time
+        </div>
+    <input style="color:black;" type="time" placeholder="Time" name="time"  aria-describedby="basic-addon2" class="timeInput" maxlength="10" min="10:00" max="19:00" required/><br>
+
     <div class="number">
     Number of people:
         </div>
 
     <select name ="number" class="option">
-    <option value="1"  > 1</option>
-    <option value="2"> 2</option>
-    <option value="3"> 3</option>
-    <option value="4"> 4</option>
-    <option value="5"> 5</option>
-    <option value="6"> 6</option>
-    <option value="7"> 7</option>
-    <option value="8"> 8</option>
+    <option value="8"  > 8</option>
     <option value="9"> 9</option>
     <option value="10"> 10</option>
+    <option value="11"> 11</option>
+    <option value="12"> 12</option>
+    <option value="13"> 13</option>
+    <option value="14"> 14</option>
+    <option value="15"> 15</option>
+    <option value="16"> 16</option>
+    <option value="17"> 17</option>
     </select>
 
     <br>
 
-    <input style="color:white;" type="text" placeholder="Wishes" name="wishes" aria-describedby="basic-addon2" class="wishes"required/><br>
-    <input style="color:white;" type="text" placeholder="Name" name="name" aria-describedby="basic-addon2" class="name"required/><br>
-    <input style="color:white;" type="text" placeholder="Email Address" name="email" aria-describedby="basic-addon2" class="email"required/>
+    <div class="fnameClass">
+    First name
     </div>
+    <input style="color:black;" type="fname" placeholder="First Name" name="fname" aria-describedby="basic-addon2" class="fname"required/><br>
+    <div class="lnameClass">
+    Last name
+    </div>
+    <input style="color:black;" type="lname" placeholder="Last Name" name="lname" aria-describedby="basic-addon2" class="lname"required/><br>
+    
+    <div class="emailClass">
+    Email Address
+    </div>
+    <input style="color:black;" type="email" placeholder="Email Address" name="email" aria-describedby="basic-addon2" class="email"required/>
+    
     <div class="input">
     <input  type="submit" placeholder="Please send a book inquiry" value="Please send a book inquiry">
         </div>
@@ -103,5 +155,6 @@
         </div>
         <div class="vl"></div>
     </div>
+</div>
 </div>
 <?php include 'myfooter.php'?>
