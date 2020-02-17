@@ -28,23 +28,66 @@
       text-transform: uppercase;
       font-size:12px;
       font-family: Helvetica;
+      -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+      
       }
-      .order:hover{
-        color:black;
+      .order:hover,.order:focus,.order:active{
+        color:white;
         background-color:white;
+        -webkit-transform: scale(1.1);
+  transform: scale(1.1);
       }
       .bell{
         color:white;
         width:15px !important;
         height:15px !important;
         margin-top:-18px;
-
+        -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
       }
+      .bell:hover, .bell:focus, .bell:active{
+        -webkit-animation-name: bell;
+  animation-name: bell;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+      }
+    @-webkit-keyframes bell {
+    50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+      }
+    }
+    @keyframes bell {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
       .bell1{
        position:absolute;
        top:12px;
        right:80px;
        }
+       
     
       </style>
 
