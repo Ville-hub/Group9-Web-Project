@@ -1,7 +1,45 @@
+<html>
+  <head>
+    <style>
+      .facebook{
+        color:#3b5998;
+      }
+      .twitter{
+        color:#1DA1F2;
 
-    <div class="row mt-5">
-      <div class="col-md-12 text-center pt-2">
-        <p>&copy; Copyright 2020 by us. All right reserved</p>
+      }
+      .instagram{
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        border-radius:20%;
+        width:36px;
+        height:36px;
+        position:relative;
+        padding:2px;
+        margin-left:5px;
+        margin-right:-10px;
+}
+.footer{
+  background-color:#222222 !important;
+  
+}
+.footer1{
+  font-size:15px;
+}
+ 
+       
+      
+      </style>
+      </head>
+    </html>
+    <div class="row mt-5 ">
+      <div class="col-md-12 text-center pt-2 footer">
+      <i class="fa fa-facebook-official facebook" aria-hidden="true"></i>
+      <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+      <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+     
+
+        <p class="footer1">&copy; Copyright 2020 by us. All right reserved</p>
+      
       </div>
     </div>
   </div>
