@@ -244,17 +244,16 @@
         <button type="submit" class="btn">Sign up</button>
       </form> 
     </div>
-  </div>
+</div>
   
 
   </div>
-</div>
 
 
-</div>
-</div>
-</div>
-</div>
+
+
+
+
 <script>
 document.getElementById('bellID').addEventListener('click',function()
 {
@@ -264,24 +263,5 @@ document.querySelector('.bg-modal').style.display='flex';
 document.getElementById('closeID').addEventListener('click',function(){
   document.querySelector('.bg-modal').style.display='none';
 });
-
-src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
-
-function ValidateEmail(inputText)
-{
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(inputText.value.match(mailformat))
-{
-document.newsletterForm.email.focus();
-return true;
-}
-else
-{
-alert("You have entered an invalid email address!");
-document.newsletterForm.email.focus();
-return false;
-}
-}
 </script>
-</body>
 <?php include 'myfooter.php'?>
