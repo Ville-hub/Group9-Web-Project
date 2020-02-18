@@ -88,8 +88,8 @@
     position:fixed;
    overflow:auto;
    top:0;
-   left:0;
-   display:flex;
+  left:0;
+ 
    justify-content:center;
    align-items:center;
    display:none;
@@ -213,17 +213,17 @@
     <div class="col-md-4 row1">
     <img class="gallery1" src="images\gallery1.jpg" width="360" height="300">
     <img class="gallery2" src ="images\gallery2.jpg" width="360" height="450">
-    <img class="gallery3" src ="images\gallery3.jpg" width ="360" height="340">
+    <img class="gallery3" src ="images\gallery3.jpg" width ="360" height="360">
     </div>
   <div class="col-md-4 row2">
   <img class="gallery4" src="images\gallery4.jpg" width="360" height="300">
   <img class="gallery5" src="images\gallery5.jpg" width="360" height="300">
-  <img class="gallery6" src="images\gallery6.jpg" width="360" height="490">
+  <img class="gallery6" src="images\gallery6.jpg" width="360" height="510">
   </div>
   <div class="col-md-4 row3">
   <img class="gallery7" src="images\gallery7.jpg" width="360" height="350">
   <img class="gallery9" src="images\gallery9.jpg" width="360" height="280">
-  <img class="gallery8" src="images\gallery8.jpg" width="360" height="460">
+  <img class="gallery8" src="images\gallery8.jpg" width="360" height="480">
   </div>
 
 
@@ -231,16 +231,17 @@
 </div>
 </div>
 </div>
+<body onload="document.newsletterForm.email">
 <div class="bg-modal">
   <div class="modal-content">
     <div class="close"id="closeID">+</div>
     
-      <form action="newsletter.create.php" class="container">
+      <form action="newsletter.create.php" class="container" method="post" name="newsletterForm" onsubmit="return myFun()">
         
-        <input type = "email" placeholder="Email Address">
+        <input type = "email" placeholder="Email Address" name="email" class="email">
         <br>
 
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn">Sign up</button>
       </form> 
     </div>
   </div>
@@ -253,6 +254,7 @@
 </div>
 </div>
 </div>
+</div>
 <script>
 document.getElementById('bellID').addEventListener('click',function()
 {
@@ -262,5 +264,24 @@ document.querySelector('.bg-modal').style.display='flex';
 document.getElementById('closeID').addEventListener('click',function(){
   document.querySelector('.bg-modal').style.display='none';
 });
+
+src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.newsletterForm.email.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.newsletterForm.email.focus();
+return false;
+}
+}
 </script>
+</body>
 <?php include 'myfooter.php'?>
