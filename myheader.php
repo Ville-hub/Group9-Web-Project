@@ -123,7 +123,7 @@
                 </li>
                 
                   <a href="orderfood.php" class="order"> Order Online</a>
-                  <div class="bell1">
+                  <div class="bell1" id="bellID">
                   <i class="fa fa-bell-o bell" aria-hidden="true"></i>
                   </div>
               </ul>
