@@ -51,6 +51,7 @@
      background-color:transparent !important;
      margin-left:-12px;
      margin-top:-12px;
+    
    }
    .gallery{
      text-align:center;
@@ -66,16 +67,19 @@
    .gallery1,.gallery2,.gallery3{
      margin-bottom:20px;
      margin-left:15px;
+   
    }
    .gallery4,.gallery5,.gallery6{
      margin-bottom:20px;
      left:50px;
      padding-left:15px;
+    
   
    }
    .gallery7,.gallery8,.gallery9{
     margin-bottom:20px;
     right:-15px;
+ 
    }
   .galleryText{
     margin-bottom:30px;
@@ -123,6 +127,10 @@
     height:15%;
     margin-top:20px;
     margin-left:90px;
+  }
+  .btn:hover{
+    color:red;
+    background-color:white;
   }
   .close{
     position:absolute;
