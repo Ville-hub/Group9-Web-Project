@@ -39,6 +39,7 @@
      
 
         <p class="footer1">&copy; Copyright 2020 by us. All right reserved</p>
+        <a class="nav-link" href="retrieve.php">Employee Login</a>
       
       </div>
     </div>

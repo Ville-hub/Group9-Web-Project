@@ -13,6 +13,7 @@
           <p>13100</p>
           <p>Hämeenlinna</p><br>
           <p><strong>Phone</strong> : 0451602275</p><br>
+          <p><strong>Email</strong> : <a href="mailto:saigon@diner.com";>saigon@diner.com </a></p><br>
           <p><strong>Opening hours</strong></p>
           <p>Mon-Fri:10:30-21:00</p>
           <p>Sat:11:00-21:00</p>
