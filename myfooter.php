@@ -20,6 +20,7 @@
 }
 .footer{
   background-color:#222222 !important;
+
   
 }
 .footer1{
@@ -31,7 +32,7 @@
       </style>
       </head>
     </html>
-    <div class="row mt-5 ">
+    <div class="row mt-5" width="350">
       <div class="col-md-12 text-center pt-2 footer">
       <i class="fa fa-facebook-official facebook" aria-hidden="true"></i>
       <i class="fa fa-instagram instagram" aria-hidden="true"></i>
