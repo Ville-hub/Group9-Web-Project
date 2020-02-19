@@ -82,6 +82,64 @@
             }.dateInput{
                 margin-bottom:20px;
             }
+            .bg-modal{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:fixed;
+   overflow:auto;
+   top:0;
+  left:0;
+ 
+   justify-content:center;
+   align-items:center;
+   display:none;
+  }
+  .modal-content{
+    width:550px;
+    height:350px;
+    background-color:white;
+    background-image:url(images/newsletter.resize.jpg);
+    position:relative;
+  }
+  .emailSub::placeholder{
+    font-family:Garamond, serif;
+    font-size:14px;
+    
+  }
+  .emailSub{
+    border:transparent;
+    width:60%;
+    height:15%;
+    margin-top:180px;
+    margin-left:90px;
+  }
+  .btnSub{
+    background-color:red;
+    text-align:center;
+    font-size:12px;
+    color:white;
+    border:none;
+    width:15%;
+    height:15%;
+    margin-top:20px;
+    margin-left:90px;
+  }
+  .btnSub:hover{
+    color:red;
+    background-color:white;
+  }
+  .close{
+    position:absolute;
+    top:0;
+    right:14px;
+    font-size:42px;
+    transform:rotate(45deg);
+    cursor:pointer;
+    color:white;
+   
+  }
+           
         </style>
     </head>
 <html>
@@ -159,6 +217,21 @@
     </div>
 </div>
 </div>
+
+<div class="bg-modal">
+  <div class="modal-content">
+    <div class="close"id="closeID">+</div>
+    
+      <form action="newsletter.create.php" class="container" method="post" name="newsletterForm">
+        
+        <input type = "email" placeholder="Email Address" name="email" class="emailSub">
+        <br>
+
+        <button type="submit" class="btnSub" onclick="ValidateEmail(document.newsletterForm.email)">Sign up</button>
+      </form> 
+    </div>
+</div>
+
 <script>
 function ValidateEmail(inputText)
 {
@@ -175,5 +248,15 @@ document.Form2.email.focus();
 return false;
 }
 }
+
+
+document.getElementById('bellID').addEventListener('click',function()
+{
+document.querySelector('.bg-modal').style.display='flex';
+});
+
+document.getElementById('closeID').addEventListener('click',function(){
+  document.querySelector('.bg-modal').style.display='none';
+});
 </script>
 <?php include 'myfooter.php'?>
