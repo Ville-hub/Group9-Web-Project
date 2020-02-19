@@ -1,4 +1,4 @@
-<?php include 'myheader.php' ?>
+<?php include 'home_noOrder.php' ?>
 <html>
     <head>
         <style>
@@ -23,9 +23,12 @@ $sql= "insert into booking(date,time,number,fname,lname,email)
 values ('$d','$t','$n','$f','$l','$e')";
 
 if($conn->query($sql)===TRUE){
+    echo "<td>";
+    include 'booking_done.php';
+    echo "</td>";
+   // echo'<p style="color:white;font-size:20px;font-family:cubic;margin:50px;">Booking successfully. </p>';
+   // echo '<p style="color:white;font-size:20px;font-family:cubic;margin:50px;">Thank you! </p>';
     
-    echo'<p style="color:white;font-size:20px;font-family:cubic;margin:50px;">Booking successfully. </p>';
-    echo '<p style="color:white;font-size:20px;font-family:cubic;margin:50px;">Thank you! </p>';
 } else{
     echo "ERROR: " .$sql . "<br>" .$conn->error;
 
@@ -33,4 +36,3 @@ if($conn->query($sql)===TRUE){
 $conn->close();
 
 ?>
-<?php include 'myfooter.php' ?>
