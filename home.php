@@ -191,7 +191,7 @@
 </div>
 <div class ="row menuPad">
 <div class="col-md-12 hm2">
-  <img class="homeImage2" src="images\Slide1.jpg" alt="SaigonDiner happyHour" width="1168" height="700">
+  <img class="homeImage2" src="images\Slide1.JPG" alt="SaigonDiner happyHour" width="1168" height="700">
   </div>
   </div>
 
@@ -239,17 +239,17 @@
 </div>
 </div>
 </div>
-<body onload="document.newsletterForm.email">
+
 <div class="bg-modal">
   <div class="modal-content">
     <div class="close"id="closeID">+</div>
     
-      <form action="newsletter.create.php" class="container" method="post" name="newsletterForm" onsubmit="return myFun()">
+      <form action="newsletter.create.php" class="container" method="post" name="newsletterForm">
         
         <input type = "email" placeholder="Email Address" name="email" class="email">
         <br>
 
-        <button type="submit" class="btn">Sign up</button>
+        <button type="submit" class="btn" onclick="ValidateEmail(document.newsletterForm.email)">Sign up</button>
       </form> 
     </div>
 </div>
@@ -271,5 +271,22 @@ document.querySelector('.bg-modal').style.display='flex';
 document.getElementById('closeID').addEventListener('click',function(){
   document.querySelector('.bg-modal').style.display='none';
 });
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.newsletterForm.email.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.newsletterForm.email.focus();
+return false;
+}
+}
+
 </script>
 <?php include 'myfooter.php'?>
