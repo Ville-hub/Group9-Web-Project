@@ -151,7 +151,7 @@
     <input style="color:black;" type="email" placeholder="Email Address" name="email" aria-describedby="basic-addon2" class="email"required/>
     
     <div class="input">
-    <input  type="submit" placeholder="Please send a book inquiry" value="Please send a book inquiry">
+    <input  type="submit" placeholder="Please send a book inquiry" value="Please send a book inquiry" onclick="ValidateEmail(document.Form2.email)">
         </div>
     </form>
         </div>
@@ -159,4 +159,21 @@
     </div>
 </div>
 </div>
+<script>
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.Form2.email.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.Form2.email.focus();
+return false;
+}
+}
+</script>
 <?php include 'myfooter.php'?>
