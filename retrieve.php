@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
+<?php include 'myheader.php' ?>
+<?php include 'db.php' ?>
+
 <style>
 h3{
     color: white;
@@ -10,28 +10,42 @@ h3{
     }
 
 </style>
-</head>
-<body>
-    <h3>Order Information</h3>
-</body>
-</html>
 
-
-
-<?php include 'db.php' ?>
-<?php include 'myheader.php' ;
-
+<?php 
 
 
 $sql = "select * from orders";
-$result = $conn->query($sql);
+$result = $conn->query($sql); ?>
+<div class="table-responsive ">
+<table class="table table-striped table-bordered">
+    <thead class="thead-light" >
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Order</th>
+            <th scope="col">Request</th>
+            <th scope="col">Order Received At</th>
+            
+        </tr>
+    </thead>
+
+    <tbody class="table-light">
+<?php     
 if($result ->num_rows > 0) {
 //fetch_assoc(): It fetches result as an associative array.
-echo "<table class='table table-active table-hover '><thead class='thead-dark'><tr><th>ID</th><th>Name</th><th>Order</th><th>Request</th><th>Order Received at</th></tr></thead>";
 
-    while($row = $result ->fetch_assoc()){
-        echo "<tbody><tr><td>" . $row['id'] . "</td><td>" . $row['name'] . "</td><td>" . $row['food'] . "</td><td>" . $row['request'] . "</td><td>" . $row['ordertime'] . "</td></tr></tbody>"      
-        ."<br>";
+
+    while($row = $result ->fetch_assoc()){?>
+        <tr>
+            <td><?php echo $row["id"]?></td>
+            <td><?php echo $row["name"]?></td>
+            <td><?php echo $row["email"]?></td>
+            <td><?php echo $row["food"]?></td>
+            <td><?php echo $row["request"]?></td>
+            <td><?php echo $row["ordertime"]?></td>
+        </tr>
+        <?php
     }
 }
 
@@ -39,13 +53,13 @@ else
 {
     echo "no results";
 }
- 
-$conn->close();
-
-
-
-
-
-
-
 ?>
+    </tbody>
+    </table>
+    </div>
+
+<?php
+$conn->close();
+?>
+
+<?php include 'myfooter.php' ?>
