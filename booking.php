@@ -1,6 +1,7 @@
 <?php include 'myheader.php'?>
 <html>
     <head>
+    
         <style>
             .option{
                 margin-left:1px;
@@ -139,10 +140,26 @@
     color:white;
    
   }
+
+  input:invalid+span:after{
+      position:absolute;
+      content: '✖';
+      color:white;
+      padding-left:5px;
+  }
+  input:valid+span:after{
+      position:absolute;
+      content:'✓';
+      color:white;
+      padding-left:5px;
+  }
            
         </style>
     </head>
-<html>
+</html>
+
+
+
 <div class="row mt-5">
     <div class="col-md-12 BookTable p-3">
         <div class="row">
@@ -169,11 +186,12 @@
                     Date
         </div>
                 
-    <input style="color:black;" type="date" placeholder="Date" name="date"  aria-describedby="basic-addon2" class="dateInput" maxlength="10" required/><br>
+    <input style="color:black;" type="date" placeholder="Date" name="date"  aria-describedby="basic-addon2" class="dateInput" maxlength="10" id="date" required/><br>
     <div class="time">
-        Time
+        Booking Time( 11h30 - 18h )
         </div>
-    <input style="color:black;" type="time" placeholder="Time" name="time"  aria-describedby="basic-addon2" class="timeInput" maxlength="10" min="10:00" max="19:00" required/><br>
+    <input style="color:black;" type="time" placeholder="Time" name="time"  aria-describedby="basic-addon2" class="timeInput" maxlength="10" min="11:30" max="18:00" step="600" required/><br>
+    
 
     <div class="number">
     Number of people:
@@ -258,5 +276,8 @@ document.querySelector('.bg-modal').style.display='flex';
 document.getElementById('closeID').addEventListener('click',function(){
   document.querySelector('.bg-modal').style.display='none';
 });
-</script>
+
+
+
+
 <?php include 'myfooter.php'?>
