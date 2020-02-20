@@ -294,7 +294,18 @@ margin-top:15px;
     border-radius: 5px;
     padding: 16px;
     margin-bottom: 20px;
+    color: #fefefe;
 }
 input[type="text"] {
     background-color: #fefefe;
+}
+.checkbutton{
+    background: #333;
+    color: #fefefe;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
 }
