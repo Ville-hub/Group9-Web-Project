@@ -85,6 +85,7 @@ a:hover
   }
   .footer{
       background-color: #222222 !important;
+      
   }
   
 
@@ -269,3 +270,31 @@ margin-top:15px;
           height:1090px;
       }
   }
+  .orders {
+    background-color: #222222;
+  }
+
+.product-grid .product-image{
+    position:relative;transition:all .3s ease 0s
+}
+.product-grid .product-image a{
+    display:block
+}
+.product-grid .product-image img{
+    width:100%;height:auto
+}
+.price{
+    color: #fefefe;
+}
+
+/* CSS FOR FOOD ORDERS */
+.products {
+    border: 1px solid #333;
+    background-color: #222222;
+    border-radius: 5px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    background-color: #fefefe;
+}
