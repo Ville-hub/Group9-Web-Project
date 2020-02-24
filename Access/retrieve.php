@@ -1,5 +1,5 @@
-<?php include 'myheader.php' ?>
-<?php include 'db.php' ?>
+<?php include '..\myheader.php' ?>
+<?php include '..\db.php' ?>
 
 <style>
 h3{
@@ -62,4 +62,4 @@ else
 $conn->close();
 ?>
 
-<?php include 'myfooter.php' ?>
+<?php include '..\myfooter.php' ?>

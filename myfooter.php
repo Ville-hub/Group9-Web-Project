@@ -25,6 +25,26 @@
 }
 .footer1{
   font-size:15px;
+
+}
+.a{
+  text-align: center;
+  
+}
+.login {
+    margin-top:10px;
+}
+.icons{
+    margin-top:-30px;
+}
+.copyright{
+  margin-top:10px;
+}
+p{
+ 
+  margin-top:-15px;
+  font-size: 18px;
+    font-family: Garamond, serif;
 }
  
        
@@ -34,17 +54,20 @@
     </html>
     <div class="row mt-5" width="350">
       <div class="col-md-12 text-center pt-2 footer">
+      <div class="login">
+      <a class="nav-link " href="Access\retrieve.php" ><p>Login</p></a>
+      </div>  
+      <div class="icons">
       <i class="fa fa-facebook-official facebook" aria-hidden="true"></i>
       <i class="fa fa-instagram instagram" aria-hidden="true"></i>
       <i class="fa fa-twitter twitter" aria-hidden="true"></i>
-     
-
-        <p class="footer1">&copy; Copyright 2020 by us. All right reserved</p>
-        <a class="nav-link" href="retrieve.php">Employee Login</a>
-      
       </div>
+      <div class="copyright">
+        <p class="footer1">&copy; Copyright 2020 by us. All right reserved</p>    
+      </div>
+      </div>
+        
     </div>
-  </div>
 
   <button onclick="topFunction()" id="myBtn">
 		<i class="material-icons">change_history</i>
