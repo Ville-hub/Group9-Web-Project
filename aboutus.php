@@ -60,6 +60,14 @@
    
   }
 
+  h2 {
+    padding: 10px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
     </style>
   </head>
 </html>
@@ -69,7 +77,7 @@
             <h2>ABOUT US</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar, magna vitae dignissim finibus, ante diam viverra ligula, ut fermentum turpis justo vitae nulla. Phasellus ac massa tristique, tincidunt nisl in, ullamcorper odio. Sed dui orci, ultricies eget tincidunt ac, luctus id ligula. Fusce convallis orci vel risus convallis blandit. Nullam nunc lectus, dapibus ut massa non, rutrum finibus dolor. Aenean vel nunc pharetra, molestie nisi ut, vestibulum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in ullamcorper lorem, a consectetur massa. Quisque sagittis luctus fermentum. Curabitur urna elit, sagittis non ex vitae, tincidunt tincidunt erat. Sed gravida finibus justo, id consequat enim finibus sed. Nam feugiat vitae nisi sit amet volutpat. Mauris tristique erat et viverra gravida. Pellentesque fringilla ullamcorper nulla, sed convallis diam gravida sed. Integer id ligula ac ligula aliquam dapibus id sit amet quam. 
-            </p>
+            </p> </br>
             <p>
               Nam mollis lorem vel dictum blandit. Integer quis congue mi. Aliquam quis metus urna. Sed vitae tempus quam. Duis finibus ante a mattis pharetra. Vestibulum pulvinar tincidunt aliquet. Fusce ac dictum nibh. Cras nulla orci, elementum eget consequat sed, consectetur vel augue. Vestibulum viverra interdum risus quis tempus. Curabitur vel ornare erat. Aliquam commodo mauris at ante pellentesque efficitur. Aliquam erat volutpat. Aenean eleifend bibendum nibh, sed placerat orci scelerisque in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras metus sem, lacinia eget feugiat eget, finibus nec erat. 
             </p>
