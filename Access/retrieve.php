@@ -1,15 +1,28 @@
 <?php include '..\myheader.php' ?>
-<?php include '..\db.php' ?>
+<?php include '..\db.php' ?>  
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
 
 <style>
 h3{
-    color: white;
-    margin: 300px;
+    
+    margin-top: 120px;
+    margin-bottom: 50px;
     text-align: left;
-    padding: 90px;
+    padding: 0px;
     }
 
 </style>
+</head>
+<body>
+
+<h3>Order Information</h3>
 
 <?php 
 
@@ -63,3 +76,5 @@ $conn->close();
 ?>
 
 <?php include '..\myfooter.php' ?>
+</body>
+</html>
