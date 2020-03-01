@@ -309,3 +309,12 @@ input[type="text"] {
     font-size: 16px;
     margin: 25px 0 15px 0;
 }
+
+.card{
+    background-color: #222222 !important;
+    color: #fefefe;
+}
+.table{
+    background-color: #222222 !important;
+    color: #fefefe;
+}
