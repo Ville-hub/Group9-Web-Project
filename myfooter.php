@@ -4,6 +4,7 @@
       .facebook{
         color:#3b5998;
       }
+  
       .twitter{
         color:#1DA1F2;
 
@@ -33,6 +34,7 @@
 }
 .login {
     margin-top:10px;
+    margin-left:10px;
 }
 .icons{
     margin-top:-30px;
@@ -45,6 +47,11 @@ p{
   margin-top:-15px;
   font-size: 18px;
     font-family: Garamond, serif;
+}
+@media only screen and (max-width: 600px){
+  .footer{
+    width:100%;
+  }
 }
  
        
