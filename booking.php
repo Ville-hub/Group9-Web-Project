@@ -1,5 +1,7 @@
 <?php include 'myheader.php'?>
 <html>
+
+
     <head>
     
         <style>
@@ -153,6 +155,26 @@
       color:white;
       padding-left:5px;
   }
+  @media only screen and (max-width: 600px){
+      .row{
+          width:1185px;
+          margin-top:50px;
+      }
+      .input{
+          margin-left:-2px;
+      }
+    h4{
+        margin-left:10px;
+    }
+  }
+  @media only screen and (min-width: 768px){
+.row{
+    margin-left:15px;
+}
+.input{
+    margin-left:2px;
+}
+}
            
         </style>
     </head>
@@ -186,7 +208,8 @@
                     Date
         </div>
                 
-    <input style="color:black;" type="date" placeholder="Date" name="date"  aria-describedby="basic-addon2" class="dateInput" maxlength="10" id="date" required/><br>
+    <input style="color:black;" type="date" placeholder="Date" name="date"  aria-describedby="basic-addon2" class="dateInput" maxlength="10" id="date" required min="2020-03-02"  ><br>
+    
     <div class="time">
         Booking Time( 11h30 - 18h )
         </div>
@@ -250,7 +273,9 @@
     </div>
 </div>
 
+
 <script>
+
 function ValidateEmail(inputText)
 {
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -278,6 +303,6 @@ document.getElementById('closeID').addEventListener('click',function(){
 });
 
 
-
+</script>
 
 <?php include 'myfooter.php'?>
