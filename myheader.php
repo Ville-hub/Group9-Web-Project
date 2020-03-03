@@ -87,7 +87,31 @@
        top:12px;
        right:80px;
        }
-       
+      /* extra small devices ( phone, 600px and down) */
+  @media only screen and (max-width: 600px){
+    .order{
+      padding: 2px 10px;
+      top:15px;
+      right:200px;
+    }
+
+  }
+  /* small devices ( portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px){
+
+  }
+  /* medium devices ( landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px){
+
+  }
+  /* large devices ( laptop/desktop, 992px and up)*/
+  @media only screen and (min-width: 992px){
+
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px){
+
+  }   
     
       </style>
 
@@ -122,7 +146,7 @@
                   <a class="nav-link" href="\github\Group9-Web-Project\contact.php">Contact Info</a>
                 </li>
                 
-                  <a href="orderfood.php" class="order"> Order Online</a>
+                  <a href="order.php" class="order"> Order Online</a>
                   <div class="bell1" id="bellID">
                   <i class="fa fa-bell-o bell" aria-hidden="true"></i>
                   </div>

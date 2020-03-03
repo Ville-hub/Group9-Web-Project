@@ -3,7 +3,7 @@ body
     margin: 0;
 
     background-image: url(../images/background8_1920x1080.jpg);
-
+    
 
 
     padding-top: 50px !important;
@@ -308,4 +308,13 @@ input[type="text"] {
     border-radius: 3px;
     font-size: 16px;
     margin: 25px 0 15px 0;
+}
+
+.card{
+    background-color: #222222 !important;
+    color: #fefefe;
+}
+.table{
+    background-color: #222222 !important;
+    color: #fefefe;
 }
