@@ -15,6 +15,11 @@
 
     <title>Vietnamese Restaurant Saigon Diner</title>
     <style>
+    .navbar-brand{
+      font-family:Futura;
+      font-size:21px;
+    }
+  
       .order{
         background-color: transparent !important;
       border:1px solid;
@@ -131,10 +136,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="home.php"> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="aboutus.php">About Us</a>
+                  <a class="nav-link" href="aboutus.php"> About Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="menu.php">Menu</a>

@@ -67,13 +67,75 @@
   p {
     text-align: justify;
   }
+  .facebook{
+        color:#3b5998;
+      }
+      .twitter{
+        color:#1DA1F2;
+
+      }
+      .instagram{
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        border-radius:20%;
+        width:36px;
+        height:36px;
+        position:relative;
+        padding:2px;
+        margin-left:5px;
+        margin-right:-10px;
+}
+.footer{
+  background-color:#222222 !important;
+
+  
+}
+.footer1{
+  font-size:15px;
+
+}
+.a{
+  text-align: center;
+  
+}
+.login {
+    margin-top:10px;
+    margin-left:525px;
+}
+.icons{
+    margin-top:-30px;
+}
+.copyright{
+  margin-top:5px;
+  margin-left:435px;
+}
+@media only screen and (max-width: 600px){
+.aboutus{
+  width:1185px;
+  margin-top:20px;
+}
+.review{
+  width:1185px;
+}
+.review1,.review2,.review3{
+  margin-left:240px;
+  margin-top:15px;
+}
+.footerAboutUs{
+  width:1185px;
+
+}
+.login{
+  margin-left:550px;
+}
+}
+  
 
     </style>
   </head>
 </html>
 
-  <div  class="row mt-5">
-    <div class="col-md-12 bg-dark text-center pt-3">
+  <div  class="row mt-5 aboutus">
+    <div class="col-md-12 bg-dark text-center pt-3 ">
             <h2>ABOUT US</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar, magna vitae dignissim finibus, ante diam viverra ligula, ut fermentum turpis justo vitae nulla. Phasellus ac massa tristique, tincidunt nisl in, ullamcorper odio. Sed dui orci, ultricies eget tincidunt ac, luctus id ligula. Fusce convallis orci vel risus convallis blandit. Nullam nunc lectus, dapibus ut massa non, rutrum finibus dolor. Aenean vel nunc pharetra, molestie nisi ut, vestibulum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in ullamcorper lorem, a consectetur massa. Quisque sagittis luctus fermentum. Curabitur urna elit, sagittis non ex vitae, tincidunt tincidunt erat. Sed gravida finibus justo, id consequat enim finibus sed. Nam feugiat vitae nisi sit amet volutpat. Mauris tristique erat et viverra gravida. Pellentesque fringilla ullamcorper nulla, sed convallis diam gravida sed. Integer id ligula ac ligula aliquam dapibus id sit amet quam. 
@@ -84,16 +146,16 @@
     </div>
   </div>
     <!--</div>-->
-    <div class="row mt-5">
-      <div class="col-xl-4 review">
+    <div class="row mt-5 review">
+      <div class="col-xl-4 review1">
         <span class="yelp-review" data-review-id="UzMKy3OjSr7edeSMD8R5_A" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=SXJmAdpip5_vFFHPj7lwJQ" rel="nofollow noopener">Chang L.</a>'s <a href="https://www.yelp.com/biz/yummy-yummy-san-francisco?hrid=UzMKy3OjSr7edeSMD8R5_A" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/KCVZ0Z5GQgQxduizQ91O1Q" rel="nofollow noopener">Yummy Yummy</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
       </div>
       
-      <div class="col-xl-4 review">
+      <div class="col-xl-4 review2">
           <span class="yelp-review" data-review-id="cAAbqh_boCw6EQq9tjFUSw" data-hostname="www.yelp.com">Lizzie C.</a>'s <a href="https://www.yelp.com/biz/yummy-yummy-san-francisco?hrid=cAAbqh_boCw6EQq9tjFUSw" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/KCVZ0Z5GQgQxduizQ91O1Q" rel="nofollow noopener">Yummy Yummy</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
       </div>
       
-      <div class="col-xl-4 review">	
+      <div class="col-xl-4 review3">	
         <p>
         <span class="yelp-review" data-review-id="UzMKy3OjSr7edeSMD8R5_A" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=SXJmAdpip5_vFFHPj7lwJQ" rel="nofollow noopener">Chang L.</a>'s <a href="https://www.yelp.com/biz/yummy-yummy-san-francisco?hrid=UzMKy3OjSr7edeSMD8R5_A" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/KCVZ0Z5GQgQxduizQ91O1Q" rel="nofollow noopener">Yummy Yummy</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
         </p>
@@ -111,9 +173,30 @@
       </form> 
     </div>
 </div>
-  
-    
+</div>
+<div class="row mt-5 footerAboutUs" width="350">
+      <div class="col-md-12 text-center pt-2 footer">
+      <div class="login">
+      <a class="nav-link " href="Access\retrieve.php" ><p>Login</p></a>
+      </div>  
+      <div class="icons">
+      <i class="fa fa-facebook-official facebook" aria-hidden="true"></i>
+      <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+      <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+      </div>
+      <div class="copyright">
+        <p class="footer1">&copy; Copyright 2020 by us. All right reserved</p>    
+      </div>
+      </div>
+        
     </div>
+
+
+
+
+
+    
+    
 <script>
 document.getElementById('bellID').addEventListener('click',function()
 {
@@ -123,5 +206,6 @@ document.querySelector('.bg-modal').style.display='flex';
 document.getElementById('closeID').addEventListener('click',function(){
   document.querySelector('.bg-modal').style.display='none';
 });
+
 </script>
-    <?php include 'myfooter.php'?>
+
