@@ -8,7 +8,7 @@
             </div>
             
         <?php 	} ?>
-        <div class="card card-default p-3 mt-3">
+        <div class="card p-3 mt-3">
         <form method="post" action="">
         <!-- card of the ordered items in cart -->
         <div class="card-title">Your order </div>
@@ -45,7 +45,7 @@
             <div class="card-body">
                 <div class="form-group">
                     <label for="ship_name">Name</label>
-                    <input id="ship_name" type="text" input type="text" name="ship_name" placeholder="Name" class="form-control"required>
+                    <input type="text2" id="ship_name" name="ship_name" placeholder="Name" class="form-control"required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
@@ -56,10 +56,13 @@
                     <input id="phone" type="number" name="phone" placeholder="Phone number" class="form-control"required>
                 </div>                
             </div>
-            <div class="btn-group btn-group-justified">
+            <div class="col-md-12">
+            <div class="btn-group btn-block">
                 <a href="order.php" class="btn btn-secondary">Items page</a>
                 <input type="submit" name="save_order" class="btn btn-secondary" value="Submit">
             </div>
-        </form>        
+            </div>
+        </form>
+        </div>        
     </div>
     
