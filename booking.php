@@ -1,6 +1,10 @@
 <?php include 'myheader.php'?>
+<!doctype html>
 <html>
-
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
 
     <head>
     
@@ -33,7 +37,7 @@
             .email{
                 margin:1px;
                 width:80%;
-                color:black;
+                color:white;;
                 margin-bottom:30px;
                 margin-top:20px;
             
@@ -53,10 +57,26 @@
             .date{
                 color:white;
                 margin-bottom:30px;
+                
             }
             .emailClass{
                 color:white;
             }
+            .ui-datepicker {
+                color:white;
+                background-color:#222222;
+            }
+            
+            .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+                background-color:#222222;
+            }
+            .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+                border:1px solid yellow !important;
+            }
+
+            
+           
+
             .fnameClass{
                 color:white;
                 margin-bottom:30px;
@@ -84,7 +104,16 @@
                 margin-bottom:20px;
             }.dateInput{
                 margin-bottom:20px;
+                margin-left:30px;
+                width:50%;
             }
+            input[type=text] {
+                width:80%;
+                margin-left:1px;
+                height:20%;
+                margin-top:-10px;
+            }
+
             .bg-modal{
     width:100%;
     height:100%;
@@ -155,6 +184,47 @@
       color:white;
       padding-left:5px;
   }
+  .facebook{
+        color:#3b5998;
+      }
+      .twitter{
+        color:#1DA1F2;
+
+      }
+      .instagram{
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        border-radius:20%;
+        width:36px;
+        height:36px;
+        position:relative;
+        padding:2px;
+        margin-left:5px;
+        margin-right:-10px;
+}
+.footer{
+  background-color:#222222 !important;
+
+  
+}
+.footer1{
+  font-size:15px;
+
+}
+.a{
+  text-align: center;
+  
+}
+.login {
+    margin-top:10px;
+    margin-left:20px;
+}
+.icons{
+    margin-top:-30px;
+}
+.copyright{
+  margin-top:5px;
+  margin-left:20px;
+}
   @media only screen and (max-width: 600px){
       .row{
           width:1185px;
@@ -169,7 +239,7 @@
   }
   @media only screen and (min-width: 768px){
 .row{
-    margin-left:15px;
+    margin-left:6px;
 }
 .input{
     margin-left:2px;
@@ -178,11 +248,19 @@
            
         </style>
     </head>
-</html>
 
 
-
+<script>
+$( function() {
+    $( "#date" ).datepicker({
+        minDate:0,
+        dateFormat: 'dd-mm-yy'
+        
+    });
+  } );
+</script>
 <div class="row mt-5">
+
     <div class="col-md-12 BookTable p-3">
         <div class="row">
             <div class="col-md-6 Form1"> 
@@ -208,12 +286,14 @@
                     Date
         </div>
                 
-    <input style="color:black;" type="date" placeholder="Date" name="date"  aria-describedby="basic-addon2" class="dateInput" maxlength="10" id="date" required min="2020-03-02"  ><br>
+    <input style="color:black;" type="text" placeholder="Date" name="date"  aria-describedby="basic-addon2" class="dateInput"  id="date"   ><br>
+   
     
+
     <div class="time">
-        Booking Time( 11h30 - 18h )
+        Booking Time( 11h30 - 20h )
         </div>
-    <input style="color:black;" type="time" placeholder="Time" name="time"  aria-describedby="basic-addon2" class="timeInput" maxlength="10" min="11:30" max="18:00" step="600" required/><br>
+    <input style="color:black;" type="time" placeholder="Time" name="time"  aria-describedby="basic-addon2" class="timeInput" maxlength="10" min="11:30" max="20:00" step="600" required/><br>
     
 
     <div class="number">
@@ -230,7 +310,7 @@
     <option value="14"> 14</option>
     <option value="15"> 15</option>
     <option value="16"> 16</option>
-    <option value="17"> 17</option>
+    
     </select>
 
     <br>
@@ -273,8 +353,27 @@
     </div>
 </div>
 
+<div class="row mt-5 footerAboutUs" width="350">
+      <div class="col-md-12 text-center pt-2 footer">
+      <div class="login">
+      <a class="nav-link " href="Access\retrieve.php" ><p>Login</p></a>
+      </div>  
+      <div class="icons">
+      <i class="fa fa-facebook-official facebook" aria-hidden="true"></i>
+      <i class="fa fa-instagram instagram" aria-hidden="true"></i>
+      <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+      </div>
+      <div class="copyright">
+        <p class="footer1">&copy; Copyright 2020 by us. All right reserved</p>    
+      </div>
+      </div>
+        
+    </div>
+ 
 
 <script>
+
+
 
 function ValidateEmail(inputText)
 {
@@ -304,5 +403,4 @@ document.getElementById('closeID').addEventListener('click',function(){
 
 
 </script>
-
-<?php include 'myfooter.php'?>
+</html>
