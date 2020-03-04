@@ -14,7 +14,7 @@
 
         <div class="col-sm-4 col-md-3 text-center">   
             <div class="products">
-                    <img src="images/test.jpg" class="img-fluid"><br> 
+                    <img src="https://picsum.photos/200" class="img-fluid"><br> 
                 
                 <h4 class="text-info">PHO SOUP<br></h4>
                 <div class="card-footer"> <p class="item_price">10€</p>
@@ -31,7 +31,7 @@
 
         <div class="col-sm-4 col-md-3 text-center">   
             <div class="products">
-                    <img src="images/test.jpg" class="img-fluid"><br> 
+                    <img src="https://picsum.photos/200" class="img-fluid"><br> 
                 
                 <h4 class="text-info">PHO VEGGIE</h4>
                 <div class="card-footer"> <p class="item_price">10€</p>
@@ -48,7 +48,7 @@
 
         <div class="col-sm-4 col-md-3 text-center">   
             <div class="products">
-                    <img src="images/test.jpg" class="img-fluid"><br> 
+                    <img src="https://picsum.photos/200" class="img-fluid"><br> 
                 
                 <h4 class="text-info">STEAMED PORK RIBS RICE </h4>
                 <div class="card-footer"> <p class="item_price">10€</p>
@@ -65,7 +65,7 @@
 
         <div class="col-sm-4 col-md-3 text-center">   
             <div class="products">
-                    <img src="images/test.jpg" class="img-fluid"><br> 
+                    <img src="https://picsum.photos/200" class="img-fluid"><br> 
                 
                 <h4 class="text-info">GOLDEN CHICKEN WONTON</h4>
                 <div class="card-footer"> <p class="item_price">15€</p>

@@ -29,23 +29,23 @@ if(isset($_GET['do'])){ // check request from page forms
 		}
 		else 
 		{
-			//if there is an order , count items in order has the same type of added item
+			//if there is an order, count items in order has the same type of added item
 			$order_id = $_SESSION['order_id'];
-			$sql_item_quantity = "select count(*) as quantity  from order_items where order_id =$order_id and item_number = $item_number";
-			$result = mysqli_query($conn,$sql_item_quantity)or die(mysqli_error($conn));
+			$sql_item_quantity = "select count(*) as quantity from order_items where order_id =$order_id and item_number = $item_number";
+			$result = mysqli_query($conn,$sql_item_quantity) or die(mysqli_error($conn));
 			$row = mysqli_fetch_assoc($result);
 
-		    $item_quantity = $row['quantity'];//$result->fetch_assoc()['quantity'];//$row[0];
+			$item_quantity = $row['quantity'];
+			//$result->fetch_assoc()['quantity'];//$row[0];
 
 			
 		}
-		//now we will add the new item <br>
-		// if there is one or more from this item we only update the record of existed item .add one to the quantity and add an item price to the existing cost 
+		//Adding new item
+		// if there is one or more from this item we only update the record of existed item add one to the quantity and add an item price to the existing cost 
 		if( intval($item_quantity) >= 1 ){
 			$sql_add_item = "Update order_items set quantity=quantity+1 , price = price + $item_price";
-			
 		}else{ 
-		// there is no items in the same type .so,we make a new record to add the item
+		// there is no items in the same type so ,we make a new record to add the item
 			$sql_add_item = "INSERT INTO order_items (order_id,item_number,item_name,quantity,price ) VALUES ($order_id,$item_number,'$item_name',$quantity,$item_price)";
 			
 		}
@@ -57,7 +57,7 @@ if(isset($_GET['do'])){ // check request from page forms
 		}			
 	break;	
 	case"delete":
-	// Code of deleting a spesific items details from order 
+	// Code of deleting a specific items details from order 
 		$item_id = intval($_GET['id']);
 		$order_id = $_SESSION['order_id'];
 		$sql_item_delete = "DELETE FROM order_items where order_id = $order_id and id = $item_id ";
@@ -87,7 +87,7 @@ if(isset($_GET['do'])){ // check request from page forms
 		$sql_add_item = "Update order_items set quantity=quantity+1 , price = ( price /( quantity - 1) ) * quantity where id =$item_id";
 		$result = mysqli_query($conn,$sql_add_item)or die(mysqli_error($conn).'-'. $sql_item_delete);
 		if($result){
-			$msg = "Item was added";
+			$msg = "Item added";
 		}else{
 			$msg = "Cannot add item";
 		}	

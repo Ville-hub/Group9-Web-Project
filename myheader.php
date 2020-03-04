@@ -135,26 +135,26 @@
       <nav class="navbar navbar-expand-lg text-uppercase navbar-shrink fixed-top navbar-dark">
         <div class="container"> 
           <div class="navbar-nav mx-auto">
-            <a class="navbar-brand" href="\projectWeb\Group9-Web-Project\home.php">Saigon Diner</a>
+            <a class="navbar-brand" href="projectWeb\Group9-Web-Project\home.php">Saigon Diner</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="\projectWeb\Group9-Web-Project\home.php">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="projectWeb\Group9-Web-Project\home.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="\projectWeb\Group9-Web-Project\aboutus.php">About Us</a>
+                  <a class="nav-link" href="projectWeb\Group9-Web-Project\aboutus.php">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="\projectWeb\Group9-Web-Project\menu.php">Menu</a>
+                  <a class="nav-link" href="projectWeb\Group9-Web-Project\menu.php">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="\projectWeb\Group9-Web-Project\booking.php">Table booking</a>
+                  <a class="nav-link" href="projectWeb\Group9-Web-Project\booking.php">Table booking</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="\projectWeb\Group9-Web-Project\contact.php">Contact Info</a>
+                  <a class="nav-link" href="projectWeb\Group9-Web-Project\contact.php">Contact Info</a>
                 </li>
                 
                   <a href="order.php" class="order"> Order Online</a>

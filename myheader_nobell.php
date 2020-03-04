@@ -16,12 +16,12 @@
     <title>Vietnamese Restaurant Saigon Diner</title>
     <style>
       .order{
-        background-color: transparent !important;
+      background-color: transparent !important;
       border:1px solid;
       color:white;
       letter-spacing: 0.8px;
       padding: 4px 18px;
-      top: 15px;
+      top: 30px;
       right: 120px;
       position:absolute;
       text-decoration: none;
@@ -43,52 +43,7 @@
         -webkit-transform: scale(1.1);
   transform: scale(1.1);
       }
-      .bell{
-        color:white;
-        width:15px !important;
-        height:15px !important;
-        margin-top:-18px;
-        -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      }
-      .bell:hover, .bell:focus, .bell:active{
-        -webkit-animation-name: bell;
-  animation-name: bell;
-  -webkit-animation-duration: 0.15s;
-  animation-duration: 0.15s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-      }
-    @-webkit-keyframes bell {
-    50% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-    }
-    100% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-      }
-    }
-    @keyframes bell {
-  50% {
-    -webkit-transform: translateX(3px) rotate(2deg);
-    transform: translateX(3px) rotate(2deg);
-  }
-  100% {
-    -webkit-transform: translateX(-3px) rotate(-2deg);
-    transform: translateX(-3px) rotate(-2deg);
-  }
-}
-      .bell1{
-       position:absolute;
-       top:12px;
-       right:80px;
-       }
-       
-    
+          
       </style>
 
   </head>
@@ -100,29 +55,29 @@
       <nav class="navbar navbar-expand-lg text-uppercase navbar-shrink fixed-top navbar-dark">
         <div class="container"> 
           <div class="navbar-nav mx-auto">
-            <a class="navbar-brand" href="home.php">Saigon Diner</a>
+            <a class="navbar-brand" href="\github\Group9-Web-Project\home.php">Saigon Diner</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="\github\Group9-Web-Project\home.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="aboutus.php">About Us</a>
+                  <a class="nav-link" href="\github\Group9-Web-Project\aboutus.php">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="menu.php">Menu</a>
+                  <a class="nav-link" href="\github\Group9-Web-Project\menu.php">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="booking.php">Table booking</a>
+                  <a class="nav-link" href="\github\Group9-Web-Project\booking.php">Table booking</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.php">Contact Info</a>
+                  <a class="nav-link" href="\github\Group9-Web-Project\contact.php">Contact Info</a>
                 </li>
                 
-                  <a href="orderfood.php" class="order"> Order Online</a>
+                  <a href="\github\Group9-Web-Project\order.php" class="order"> Order Online</a>
                  
               </ul>
             </div>

@@ -1,6 +1,6 @@
 
 <?php include '..\db.php'?> 
-<?php include '..\myheader.php'?>   
+<?php include '..\myheader_nobell.php'?>   
 <!-- Header -->
 <!doctype html>
 <html lang="en">
@@ -113,25 +113,27 @@
 
   </head>
   <body>
-    
-    
 
       <h3>Order Information</h3>
 
 <?php 
 
 
-$sql = "select * from orders";
+$sql = "SELECT orders.id, orders.date, orders.ship_name, orders.email, orders.phone,  order_items.item_name, order_items.quantity, order_items.price
+FROM orders
+INNER JOIN order_items ON orders.id = order_items.order_id;";
 $result = $conn->query($sql); ?>
 <div class="table-responsive ">
 <table class="table table-striped table-bordered">
     <thead class="thead-light" >
         <tr>
             <th scope="col">ID</th>
-            <th scope="col">Name</th>
+            <th scope="col">Food Ordered</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Phone Number</th>
             <th scope="col">Email</th>
-            <th scope="col">Order</th>
-            <th scope="col">Request</th>
             <th scope="col">Order Received At</th>
             
         </tr>
@@ -142,15 +144,16 @@ $result = $conn->query($sql); ?>
 if($result ->num_rows > 0) {
 //fetch_assoc(): It fetches result as an associative array.
 
-
     while($row = $result ->fetch_assoc()){?>
         <tr>
             <td><?php echo $row["id"]?></td>
-            <td><?php echo $row["name"]?></td>
+            <td><?php echo $row["item_name"]?></td>
+            <td><?php echo $row["quantity"]?></td>
+            <td><?php echo $row["price"]?></td>
+            <td><?php echo $row["ship_name"]?></td>
+            <td><?php echo $row["phone"]?></td>
             <td><?php echo $row["email"]?></td>
-            <td><?php echo $row["food"]?></td>
-            <td><?php echo $row["request"]?></td>
-            <td><?php echo $row["ordertime"]?></td>
+            <td><?php echo $row["date"]?></td>
         </tr>
         <?php
     }
@@ -185,7 +188,7 @@ $conn->close();
         color:#1DA1F2;
         font-size:30px;
         margin-bottom:5px;
-        margin-left:-27px;
+        margin-left:7px;
 
       }
       .instagram{
@@ -254,30 +257,13 @@ p{
         
     </div>
 
-  <button onclick="topFunction()" id="myBtn">
-		<i class="material-icons">change_history</i>
-    </button>
-
+ 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <script>
-      mybutton = document.getElementById("myBtn");
-      window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-    </script>
+    
   </body>
 </html>
