@@ -119,17 +119,21 @@
 <?php 
 
 
-$sql = "select * from orders";
+$sql = "SELECT orders.id, orders.date, orders.ship_name, orders.email, orders.phone,  order_items.item_name, order_items.quantity, order_items.price
+FROM orders
+INNER JOIN order_items ON orders.id = order_items.order_id;";
 $result = $conn->query($sql); ?>
 <div class="table-responsive ">
 <table class="table table-striped table-bordered">
     <thead class="thead-light" >
         <tr>
             <th scope="col">ID</th>
-            <th scope="col">Name</th>
+            <th scope="col">Food Ordered</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Phone Number</th>
             <th scope="col">Email</th>
-            <th scope="col">Order</th>
-            <th scope="col">Request</th>
             <th scope="col">Order Received At</th>
             
         </tr>
@@ -140,15 +144,16 @@ $result = $conn->query($sql); ?>
 if($result ->num_rows > 0) {
 //fetch_assoc(): It fetches result as an associative array.
 
-
     while($row = $result ->fetch_assoc()){?>
         <tr>
             <td><?php echo $row["id"]?></td>
-            <td><?php echo $row["name"]?></td>
+            <td><?php echo $row["item_name"]?></td>
+            <td><?php echo $row["quantity"]?></td>
+            <td><?php echo $row["price"]?></td>
+            <td><?php echo $row["ship_name"]?></td>
+            <td><?php echo $row["phone"]?></td>
             <td><?php echo $row["email"]?></td>
-            <td><?php echo $row["food"]?></td>
-            <td><?php echo $row["request"]?></td>
-            <td><?php echo $row["ordertime"]?></td>
+            <td><?php echo $row["date"]?></td>
         </tr>
         <?php
     }
